@@ -18,3 +18,7 @@ Route::prefix('usuarios')->group(function(){
         return 'delete';
     });
 });
+
+Route::get('/dados-de-usuarios/{user}', function (\App\Models\User $user) {
+    return $user;
+});
